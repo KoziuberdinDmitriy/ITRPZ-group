@@ -27,7 +27,7 @@ public class Division implements Operation{
     }
 
     @Override
-    public void setSecondItem(double b) {
-        this.secondItem = b;
+    public void setSecondItem(double a) {
+        this.secondItem = a;
     }
 }
