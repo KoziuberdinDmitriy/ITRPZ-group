@@ -16,7 +16,7 @@ public class Procedure {
     {
         System.out.println(PURPLE_BOLD_BRIGHT + "Simple Calculator Version " + VERSION+"\n" + ANSI_RESET);
         System.out.println(ANSI_WHITE + "-Team Lead:\t\t\t\t -Testers:\t\t\t\t -Coder:\t\t");
-        System.out.println(RED_BOLD + "Hrybich I.  \tKozyberdin D. Lyashkova O.\t\tPasichnyk O." + ANSI_RESET + "\n");
+        System.out.println(RED_BOLD + "Koziuberdin D.  \tHrubych I. Lyashkova O.\t\tPasichnyk O." + ANSI_RESET + "\n");
     }
 
     public double initItem()
