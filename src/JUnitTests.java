@@ -41,4 +41,24 @@ public class JUnitTests {
 
         Assert.assertEquals(expected, actual);
     }
+
+    @Test
+    public void testMultiplication(){
+        int a = 3;
+        int b = 4;
+        int expectedResult = 12;
+        Multiplication multiplication = new Multiplication(a,b);
+        multiplication.doOperate();
+        Assert.assertEquals(expectedResult, multiplication.answer, 0);
+    }
+
+    @Test
+    public void testDivision(){
+        int a = 12;
+        int b = 4;
+        int expectedResult = 3;
+        Division division = new Division(a,b);
+        division.doOperate();
+        Assert.assertEquals(expectedResult, division.answer, 0);
+    }
 }
