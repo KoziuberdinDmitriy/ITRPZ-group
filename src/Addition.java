@@ -4,13 +4,6 @@ public class Addition implements Operation{
     public double secondItem;
     public double answer;
 
-    public Addition(double a, double b)
-    {
-
-        this.firstItem = a;
-        this.secondItem = b;
-
-    }
     @Override
     public void doOperate(){
         this.answer = firstItem+secondItem;
