@@ -40,6 +40,8 @@ public class Procedure {
             calc = new Division();
         else if (op.equals("sin"))
             calc = new Sin();
+        else if (op.equals("cos"))
+            calc = new Cos();
         else calc = new UnknownOperation();
 
         System.out.print(YELLOW_BOLD);
