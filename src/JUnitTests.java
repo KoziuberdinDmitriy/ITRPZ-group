@@ -66,4 +66,13 @@ public class JUnitTests {
         division.doOperate();
         Assert.assertEquals(expectedResult, division.answer, 0);
     }
+
+    @Test
+    public void testSin(){
+        double expectedResult = -0.5440211108893698;
+        Sin sin = new Sin();
+        sin.setFirstItem(x);
+        sin.doOperate();
+        Assert.assertEquals(expectedResult, sin.answer, 0.001);
+    }
 }
