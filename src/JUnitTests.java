@@ -49,24 +49,20 @@ public class JUnitTests {
 
     @Test
     public void testMultiplication(){
-        int a = 3;
-        int b = 4;
         int expectedResult = 12;
         Multiplication multiplication = new Multiplication();
-        multiplication.setFirstItem(a);
-        multiplication.setSecondItem(b);
+        multiplication.setFirstItem(x);
+        multiplication.setSecondItem(y);
         multiplication.doOperate();
         Assert.assertEquals(expectedResult, multiplication.answer, 0);
     }
 
     @Test
     public void testDivision(){
-        int a = 12;
-        int b = 4;
         int expectedResult = 3;
         Division division = new Division();
-        division.setFirstItem(a);
-        division.setSecondItem(b);
+        division.setFirstItem(x);
+        division.setSecondItem(y);
         division.doOperate();
         Assert.assertEquals(expectedResult, division.answer, 0);
     }
