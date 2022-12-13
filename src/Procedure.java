@@ -34,13 +34,17 @@ public class Procedure {
         Operation calc;
 
         if (op.equals("+"))
-            calc = new Addition(0,0);
+            calc = new Addition();
         else if (op.equals("-"))
-            calc = new Subtraction(0,0);
+            calc = new Subtraction();
         else if (op.equals("*"))
-            calc = new Multiplication(0, 0);
+            calc = new Multiplication();
         else if (op.equals("/"))
-            calc = new Division(0,0);
+            calc = new Division();
+        else if (op.equals("sin"))
+            calc = new Sin();
+        else if (op.equals("cos"))
+            calc = new Cos();
         else calc = new UnknownOperation();
 
         System.out.print(YELLOW_BOLD);

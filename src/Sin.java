@@ -1,10 +1,9 @@
-public class Subtraction implements Operation{
-    public double firstItem;
-    public double secondItem;
+public class Sin implements Operation{
+    public double item;
     public double answer;
     @Override
-    public void doOperate(){
-        this.answer = firstItem-secondItem;
+    public void doOperate() {
+        this.answer = Math.sin(item);
     }
 
     @Override
@@ -12,16 +11,18 @@ public class Subtraction implements Operation{
         System.out.print("\nAnswer: " + this.answer);
     }
 
+    @Override
     public void getOperationName() {
-        System.out.print("\nOperation: "+Subtraction.class.getName());
+        System.out.print("\nOperation: "+Sin.class.getName());
     }
+
     @Override
     public void setFirstItem(double a) {
-        this.firstItem = a;
+        this.item = a;
     }
 
     @Override
     public void setSecondItem(double b) {
-        this.secondItem = b;
+        this.item = b;
     }
 }
