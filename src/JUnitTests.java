@@ -17,7 +17,10 @@ public class JUnitTests {
     public void testAdd()
     {
         int expectedResult = 31;
-        Addition addition = new Addition(x, y);
+        Addition addition = new Addition();
+        addition.setFirstItem(x);
+        addition.setSecondItem(y);
+
         addition.doOperate();
         Assert.assertEquals(expectedResult, addition.answer, 0);
     }
@@ -26,7 +29,9 @@ public class JUnitTests {
     public void testSubstraction()
     {
         int expectedResult = -11;
-        Subtraction subtraction = new Subtraction(x, y);
+        Subtraction subtraction = new Subtraction();
+        subtraction.setFirstItem(x);
+        subtraction.setSecondItem(y);
         subtraction.doOperate();
         Assert.assertEquals(expectedResult, subtraction.answer, 0);
     }
@@ -47,7 +52,9 @@ public class JUnitTests {
         int a = 3;
         int b = 4;
         int expectedResult = 12;
-        Multiplication multiplication = new Multiplication(a,b);
+        Multiplication multiplication = new Multiplication();
+        multiplication.setFirstItem(a);
+        multiplication.setSecondItem(b);
         multiplication.doOperate();
         Assert.assertEquals(expectedResult, multiplication.answer, 0);
     }
@@ -57,7 +64,9 @@ public class JUnitTests {
         int a = 12;
         int b = 4;
         int expectedResult = 3;
-        Division division = new Division(a,b);
+        Division division = new Division();
+        division.setFirstItem(a);
+        division.setSecondItem(b);
         division.doOperate();
         Assert.assertEquals(expectedResult, division.answer, 0);
     }

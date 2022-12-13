@@ -1,5 +1,3 @@
-import java.util.Arrays;
-import java.util.List;
 import java.util.Scanner;
 public class Procedure {
     private static final String VERSION = "1.0";
@@ -32,15 +30,16 @@ public class Procedure {
     public Operation getTargetOperation(String op)
     {
         Operation calc;
-
         if (op.equals("+"))
-            calc = new Addition(0,0);
+            calc = new Addition();
         else if (op.equals("-"))
-            calc = new Subtraction(0,0);
+            calc = new Subtraction();
         else if (op.equals("*"))
-            calc = new Multiplication(0, 0);
+            calc = new Multiplication();
         else if (op.equals("/"))
-            calc = new Division(0,0);
+            calc = new Division();
+        else if (op.equals("sin"))
+            calc = new Sin();
         else calc = new UnknownOperation();
 
         System.out.print(YELLOW_BOLD);

@@ -3,11 +3,6 @@ public class Multiplication implements Operation{
     public double secondItem;
     public double answer;
 
-    public Multiplication(double a, double b)
-    {
-        this.firstItem = a;
-        this.secondItem = b;
-    }
     @Override
     public void doOperate(){
         this.answer = firstItem*secondItem;
