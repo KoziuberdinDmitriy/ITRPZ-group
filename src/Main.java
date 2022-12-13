@@ -17,6 +17,7 @@ public class Main {
                 procedure.doOperation(calculator, item, item); // calculating
                 procedure.getOperationResult(calculator); // print result
             }
+            //
             else {
                 double firstItem = procedure.initItem(); // initialization first num
                 String operation = procedure.initOperation(); // initialization operator (+, - or smth else)
