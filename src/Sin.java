@@ -1,9 +1,9 @@
-public class Sin implements Operation{
+public class Cos implements Operation{
     public double item;
     public double answer;
     @Override
     public void doOperate() {
-        this.answer = Math.sin(item);
+        this.answer = Math.cos(item);
     }
 
     @Override
@@ -13,7 +13,7 @@ public class Sin implements Operation{
 
     @Override
     public void getOperationName() {
-        System.out.print("\nOperation: "+Sin.class.getName());
+        System.out.print("\nOperation: "+Cos.class.getName());
     }
 
     @Override

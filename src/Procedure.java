@@ -41,8 +41,6 @@ public class Procedure {
             calc = new Multiplication();
         else if (op.equals("/"))
             calc = new Division();
-        else if (op.equals("sin"))
-            calc = new Sin();
         else if (op.equals("cos"))
             calc = new Cos();
         else calc = new UnknownOperation();
