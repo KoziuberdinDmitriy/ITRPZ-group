@@ -49,7 +49,7 @@ public class JUnitTests {
 
     @Test
     public void testMultiplication(){
-        int expectedResult = 12;
+        int expectedResult = 210;
         Multiplication multiplication = new Multiplication();
         multiplication.setFirstItem(x);
         multiplication.setSecondItem(y);
@@ -59,7 +59,7 @@ public class JUnitTests {
 
     @Test
     public void testDivision(){
-        int expectedResult = 3;
+        double expectedResult = 0.47619047619047616;
         Division division = new Division();
         division.setFirstItem(x);
         division.setSecondItem(y);
@@ -74,5 +74,14 @@ public class JUnitTests {
         sin.setFirstItem(x);
         sin.doOperate();
         Assert.assertEquals(expectedResult, sin.answer, 0.001);
+    }
+
+    @Test
+    public void testCos(){
+        double expectedResult = -0.5477292602242684;
+        Cos cos = new Cos();
+        cos.setFirstItem(y);
+        cos.doOperate();
+        Assert.assertEquals(expectedResult, cos.answer, 0.001);
     }
 }
