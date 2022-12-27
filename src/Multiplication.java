@@ -1,7 +1,7 @@
 public class Multiplication implements Operation{
-    public double firstItem;
-    public double secondItem;
-    public double answer;
+    private double firstItem;
+    private double secondItem;
+    private double answer;
 
     @Override
     public void doOperate(){
@@ -21,6 +21,19 @@ public class Multiplication implements Operation{
         this.firstItem = a;
     }
 
+    @Override
+    public double getFirstItem() {
+        return this.firstItem;
+    }
+
+    @Override
+    public double getSecondItem() {
+        return this.secondItem;
+    }
+
+    public double getAnswer() {
+        return this.answer;
+    }
     @Override
     public void setSecondItem(double b) {
         this.secondItem = b;

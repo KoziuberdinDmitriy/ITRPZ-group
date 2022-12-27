@@ -1,6 +1,6 @@
 public class Sin implements Operation{
-    public double item;
-    public double answer;
+    private double item;
+    private double answer;
     @Override
     public void doOperate() {
         this.answer = Math.sin(item);
@@ -19,6 +19,20 @@ public class Sin implements Operation{
     @Override
     public void setFirstItem(double a) {
         this.item = a;
+    }
+
+    @Override
+    public double getFirstItem() {
+        return this.item;
+    }
+
+    @Override
+    public double getSecondItem() {
+        return this.item;
+    }
+
+    public double getAnswer() {
+        return this.answer;
     }
 
     @Override
