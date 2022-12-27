@@ -22,7 +22,7 @@ public class JUnitTests {
         addition.setSecondItem(y);
 
         addition.doOperate();
-        Assert.assertEquals(expectedResult, addition.answer, 0);
+        Assert.assertEquals(expectedResult, addition.getAnswer(), 0);
     }
 
     @Test
@@ -33,7 +33,7 @@ public class JUnitTests {
         subtraction.setFirstItem(x);
         subtraction.setSecondItem(y);
         subtraction.doOperate();
-        Assert.assertEquals(expectedResult, subtraction.answer, 0);
+        Assert.assertEquals(expectedResult, subtraction.getAnswer(), 0);
     }
 
     @Test
@@ -73,7 +73,7 @@ public class JUnitTests {
         Sin sin = new Sin();
         sin.setFirstItem(x);
         sin.doOperate();
-        Assert.assertEquals(expectedResult, sin.answer, 0.001);
+        Assert.assertEquals(expectedResult, sin.getAnswer(), 0.001);
     }
 
     @Test
