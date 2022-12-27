@@ -54,7 +54,7 @@ public class JUnitTests {
         multiplication.setFirstItem(x);
         multiplication.setSecondItem(y);
         multiplication.doOperate();
-        Assert.assertEquals(expectedResult, multiplication.answer, 0);
+        Assert.assertEquals(expectedResult, multiplication.getAnswer(), 0);
     }
 
     @Test
@@ -64,7 +64,7 @@ public class JUnitTests {
         division.setFirstItem(x);
         division.setSecondItem(y);
         division.doOperate();
-        Assert.assertEquals(expectedResult, division.answer, 0);
+        Assert.assertEquals(expectedResult, division.getAnswer(), 0);
     }
 
     @Test
@@ -82,6 +82,6 @@ public class JUnitTests {
         Cos cos = new Cos();
         cos.setFirstItem(y);
         cos.doOperate();
-        Assert.assertEquals(expectedResult, cos.answer, 0.001);
+        Assert.assertEquals(expectedResult, cos.getAnswer(), 0.001);
     }
 }
